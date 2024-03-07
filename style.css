@@ -59,14 +59,14 @@ span {
 .animated_card2::before {
   content: '';
   position: absolute;
-  width: 50%;
+  width: 65%;
   height: 180%;
   background: #ffdb0c;
-  transform: rotate(45deg);
+  transform: rotate(30deg);
 }
 
 .animated_card2:hover::before {
-  animation: animate2 2s linear infinite;
+  animation: animate2 3s linear infinite;
 }
 @keyframes animate2 {
   from {
