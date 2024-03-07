@@ -27,6 +27,7 @@ body {
 span {
   color: rgba(254, 254, 254, .1);
   font-size: 10em;
+  z-index: 10;
 }
 
 .animated_card::before {
@@ -60,10 +61,29 @@ span {
   position: absolute;
   width: 50%;
   height: 180%;
-  background: #fff;
+  background: #ffdb0c;
   transform: rotate(45deg);
 }
 
 .animated_card2:hover::before {
   animation: animate2 2s linear infinite;
+}
+@keyframes animate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.animated_card2::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: #222;
+  border-radius: 8px;
 }
