@@ -50,3 +50,20 @@ span {
     filter: hue-rotate(350deg);
   }
 }
+
+.animated_card2 {
+  overflow: hidden;
+}
+
+.animated_card2::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 180%;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.animated_card2:hover::before {
+  animation: animate2 2s linear infinite;
+}
