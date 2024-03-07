@@ -41,4 +41,12 @@ span {
   animation: animate 2s linear infinite;
 }
 
-.animated_card:hover::before
+.animated_card:hover::before {
+  height: 512px;
+  width: 362px;
+}
+@keyframes animate {
+  50% {
+    filter: hue-rotate(350deg);
+  }
+}
